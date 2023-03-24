@@ -1,0 +1,219 @@
+@use './setup';
+
+
+// Navigation Bar
+.wrapperOne{
+    display: flex;
+    justify-content: space-between;
+   
+    ul{
+        display:flex;  
+        list-style-type:none;  
+        text-align: center;      
+    }  
+}
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.logo{
+    margin: 20px 0 0 30px;
+}
+
+.cartIcon{
+       margin: 20px 35px 0 0;
+}
+ 
+// Header section style
+header{
+    background: url(./../project-1-store-novas/novas-project/assets/home.jpg);
+    background-repeat: no-repeat;
+    height:94vh;
+    background-size: cover;
+    padding-top:10px
+    }
+
+h1{
+        text-align: left;
+        width: 263px;
+        font-weight: 500;
+         margin: 178px 0 0 329px;
+        font-family: 'Josefin Sans', sans-serif;
+           font-family: 'Poppins', sans-serif;
+}   
+ p{
+    margin: 35px 180px 0 329px;
+    font-family: 'Josefin Sans', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      line-height :1.5em;
+ }
+
+//  First Image Section
+.imageSection ul{
+    display: flex;
+    list-style-type:none; 
+    flex-direction: row; 
+    gap:10px;
+
+    li{
+        border:1px solid red;
+        width: 100%;
+        margin: 10px;
+       
+        img{
+            width: 100%;
+            height:auto;
+         object-fit: cover;         
+        }
+    }
+}
+.wrapper{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+.thirdImage{
+    transform:translateY(20px);
+}
+
+.secondImageImage{
+    transform:translateY(-20px);
+}
+.firstImage{
+    transform:translateY(20px);
+}
+.positionOne,
+.positionTwo,
+.positionThree{
+    position: relative;
+    bottom: 31px;
+    background: white;
+    display: inline-block;
+  }
+
+
+//  Featured Sale Section  
+h2{
+    text-align: center;
+    padding-top:40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+
+.shoppingGalleryOne{
+    display:flex;
+    gap:8px;
+      
+    img{
+            width: 100%;
+            height:auto;
+            object-fit: cover; 
+        }
+}
+.shoppingGalleryTwo{
+    display:flex;
+    gap: 8px;
+    padding-top:20px;
+    
+    img{
+        width: 100%;
+        height:auto;
+        object-fit: cover; 
+    }
+}
+.product{
+    position: relative;
+ }
+
+.cart{
+    width: 30px;
+    position: absolute;
+    border : 0.5px solid  lightgrey;
+    height :30px; 
+    bottom:10px; 
+    right :10px;
+}
+.secondSection .seeAll{
+    text-align: center;
+    border : 1px solid  lightgrey;
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+    margin:20px 0 50px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+// Couch/sofa Section
+.couch{
+    display: flex;
+    text-align: center;
+    // position: relative;
+    
+    .firstCouch{
+        width:30%;
+        padding:0 30px 0 30px;
+        // position: absolute;
+        
+        img {
+            width: 100%;
+        } 
+    }
+    .secondCouch{
+        width:70%;
+        padding-right: 120px;
+        // position: absolute;
+
+        img {
+            width: 100%;
+            height: 392px;
+        }
+    }
+}
+.sale{
+    background: #d7b89c;
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+    color: white;  
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Offside', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+.eliasCouch{
+    color: white;
+    position: relative;
+    bottom:360px;
+    border : 1px solid white;
+    display: inline-block;
+    padding: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Offside', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+// instagramShop
+
+.instagramShop{
+    color: #666;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: -5px 0 30px 0;
+}
+.instagram{
+    display: flex;
+
+    .instaGallery{
+        width: 25%;
+    }
+      
+    img{
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+
+
+
