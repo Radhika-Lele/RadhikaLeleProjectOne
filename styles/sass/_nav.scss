@@ -1,0 +1,27 @@
+// Navigation Bar
+.wrapperOne{
+    display: flex;
+    justify-content: space-between;
+   
+    ul{
+        display:flex;  
+        list-style-type:none;  
+        text-align: center;      
+    }  
+}
+a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover, nav a:focus{
+    border:4px solid black;
+}
+
+.logo{
+    margin: 20px 0 0 30px;
+}
+
+.cartIcon{
+       margin: 20px 35px 0 0;
+}

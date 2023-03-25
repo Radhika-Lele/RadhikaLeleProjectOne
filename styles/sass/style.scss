@@ -1,38 +1,15 @@
 @use './setup';
+@use './nav';
 
 
-// Navigation Bar
-.wrapperOne{
-    display: flex;
-    justify-content: space-between;
-   
-    ul{
-        display:flex;  
-        list-style-type:none;  
-        text-align: center;      
-    }  
-}
-a{
-    text-decoration: none;
-    padding: 10px 20px;
-}
-
-.logo{
-    margin: 20px 0 0 30px;
-}
-
-.cartIcon{
-       margin: 20px 35px 0 0;
-}
- 
 // Header section style
 header{
     background: url(./../project-1-store-novas/novas-project/assets/home.jpg);
     background-repeat: no-repeat;
     height:94vh;
     background-size: cover;
-    padding-top:10px
-    }
+    padding-top:10px; 
+}
 
 h1{
         text-align: left;
@@ -42,7 +19,7 @@ h1{
         font-family: 'Josefin Sans', sans-serif;
            font-family: 'Poppins', sans-serif;
 }   
- p{
+ header p{
     margin: 35px 180px 0 329px;
     font-family: 'Josefin Sans', sans-serif;
       font-family: 'Poppins', sans-serif;
@@ -57,7 +34,7 @@ h1{
     gap:10px;
 
     li{
-        border:1px solid red;
+        // border:1px solid red;
         width: 100%;
         margin: 10px;
        
@@ -70,7 +47,7 @@ h1{
 }
 .wrapper{
     max-width: 1080px;
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
 }
 .thirdImage{
@@ -135,11 +112,10 @@ h2{
     right :10px;
 }
 .secondSection .seeAll{
-    text-align: center;
     border : 1px solid  lightgrey;
     display: inline-block;
     padding: 15px 10px 15px 10px;
-    margin:20px 0 50px 0;
+    margin:20px 45% 50px 45%;
     font-family: "Poppins", sans-serif;
 }
 
@@ -201,6 +177,7 @@ h2{
 }
 .instagram{
     display: flex;
+    padding-bottom: 20px;
 
     .instaGallery{
         width: 25%;
@@ -212,8 +189,79 @@ h2{
         padding: 10px;
     }
 }
+//  Footer section
 
+.footerTop{
+    display: flex;
+    padding:50px 0;
+    justify-content: space-between;
+    
+    .footerBrand{
+        width: 245px;
+    }
+}
 
+.footerImage{
+    width: 6%; 
+    height: 37px;   
+}
 
+.footerImg{
+    width: 20px;
+    height: 16px;   
+}
 
+.footerList{
+    list-style-type: none;
+}
 
+.contact ul,
+.profile ul{
+    padding: 0;
+}
+.aboutCompany{
+    padding-right: 10px;
+}
+.footerIcons a{
+    padding: 0;
+    padding-right: 10px;
+}
+h3{
+    margin-top: 0;
+}
+
+// Contact Section Style
+.contactHeader {
+    background: url(./../project-1-store-novas/novas-project/assets/contact-us.jpg);
+    height: 70vh;
+}
+.container{
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    padding: 20px 20px 20px 20%;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    //border: 0 0 1px 0;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

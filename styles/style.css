@@ -247,6 +247,10 @@ a {
   padding: 10px 20px;
 }
 
+nav a:hover, nav a:focus {
+  border: 4px solid black;
+}
+
 .logo {
   margin: 20px 0 0 30px;
 }
@@ -272,7 +276,7 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
-p {
+header p {
   margin: 35px 180px 0 329px;
   font-family: "Josefin Sans", sans-serif;
   font-family: "Poppins", sans-serif;
@@ -291,7 +295,6 @@ p {
   gap: 10px;
 }
 .imageSection ul li {
-  border: 1px solid red;
   width: 100%;
   margin: 10px;
 }
@@ -304,7 +307,7 @@ p {
 
 .wrapper {
   max-width: 1080px;
-  width: 100%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -380,11 +383,10 @@ h2 {
 }
 
 .secondSection .seeAll {
-  text-align: center;
   border: 1px solid lightgrey;
   display: inline-block;
   padding: 15px 10px 15px 10px;
-  margin: 20px 0 50px 0;
+  margin: 20px 45% 50px 45%;
   font-family: "Poppins", sans-serif;
 }
 
@@ -444,6 +446,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 20px;
 }
 .instagram .instaGallery {
   width: 25%;
@@ -452,4 +455,90 @@ h2 {
   width: 100%;
   height: auto;
   padding: 10px;
+}
+
+.footerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footerTop .footerBrand {
+  width: 245px;
+}
+
+.footerImage {
+  width: 6%;
+  height: 37px;
+}
+
+.footerImg {
+  width: 20px;
+  height: 16px;
+}
+
+.footerList {
+  list-style-type: none;
+}
+
+.contact ul,
+.profile ul {
+  padding: 0;
+}
+
+.aboutCompany {
+  padding-right: 10px;
+}
+
+.footerIcons a {
+  padding: 0;
+  padding-right: 10px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.contactHeader {
+  background: url(./../project-1-store-novas/novas-project/assets/contact-us.jpg);
+  height: 70vh;
+}
+
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 20px 20%;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
