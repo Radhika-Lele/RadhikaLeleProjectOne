@@ -15,8 +15,13 @@ a{
 }
 
 nav a:hover, nav a:focus{
-    border:4px solid black;
+    border: 1px solid grey;
+    //border: 0 0 1px 0;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
 }
+
 
 .logo{
     margin: 20px 0 0 30px;
@@ -25,3 +30,10 @@ nav a:hover, nav a:focus{
 .cartIcon{
        margin: 20px 35px 0 0;
 }
+.hamMenu{
+    display: none;
+}
+#menu-toggle {
+    display: none;
+  }
+

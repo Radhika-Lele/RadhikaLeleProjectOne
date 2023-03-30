@@ -1,0 +1,65 @@
+// Header section 
+@media(max-width:700px){
+    .hamMenu{
+        display: inline-flex;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-toggle:checked ~ .menu{
+        max-height: 100%;
+    }
+  
+    h1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-118%, -75%);
+    } 
+    p{
+        width: 70%;
+        transform: translate(-78%, -50%);
+    }
+    header{
+        max-height: 416px;
+        background-position-x:50%;
+    }
+    
+}
+
+// Image Section
+@media(max-width : 600px){
+    header{
+        max-height: 500px;
+    }
+    .firstSection, .secondSection{
+      flex: 50%;
+      max-width: 100%;
+     }
+    .shoppingGalleryOne, .shoppingGalleryTwo{
+       flex-wrap: wrap;
+        max-width: 50%;   
+        }
+    .seeAll{
+        width: 17%;
+    }  
+    .couch{
+        flex-wrap: wrap;
+    }
+    .firstCouch{
+        flex-basis: 73%;
+        transform: translateX(24%);
+    } 
+    .secondCouch{
+        flex-basis: 100%;
+        transform: translateX(17%);
+    }
+    }   
+
