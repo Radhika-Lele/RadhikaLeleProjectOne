@@ -21,11 +21,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translate(-118%, -75%);
+        transform: translate(1%, -75%);
     } 
     p{
-        width: 70%;
-        transform: translate(-78%, -50%);
+        width: 82%;
+        transform: translate(2%, -50%);
     }
     header{
         max-height: 416px;
@@ -39,27 +39,70 @@
     header{
         max-height: 500px;
     }
+    .product{
+        flex: 1 0 49%;
+    }
+
     .firstSection, .secondSection{
       flex: 50%;
       max-width: 100%;
      }
     .shoppingGalleryOne, .shoppingGalleryTwo{
        flex-wrap: wrap;
-        max-width: 50%;   
+         
         }
     .seeAll{
-        width: 17%;
+        width: 18%;
     }  
     .couch{
         flex-wrap: wrap;
     }
     .firstCouch{
-        flex-basis: 73%;
-        transform: translateX(24%);
+        flex-basis: 80%;
+        transform: translateX(17%);
     } 
     .secondCouch{
         flex-basis: 100%;
         transform: translateX(17%);
     }
-    }   
+    h2{
+        transform: translateY(-40%);
+    }
+    .instagramShop{
+        transform : translateY(-130%);
+    }
+    .instagram{
+        flex-wrap: wrap;
+    }
+    
+    .instaGallery{
+        flex : 1 0 28%;
+    }
+    .footerTop{
+        flex-wrap: wrap;
+    }
+    .aboutCompany{
+        transform:none;
+    }
+    .profile, .newsLetter{
+        padding-top: 30px;
+    }
+}   
+
+@media(max-width : 320px){
+     h1{
+        transform: translate(-18%, -105%);
+     }
+
+     p{
+        transform: translate(-30%, -55%);
+     }
+     .imageSection ul{
+        flex-wrap: wrap;
+     }
+     .seeAll{
+        width: 15%;
+     }
+}
+ 
 

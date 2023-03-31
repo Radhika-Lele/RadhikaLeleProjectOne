@@ -3,6 +3,7 @@
 @use './media';
 
 
+
 // Header section style
 header{
     background: url(./../project-1-store-novas/novas-project/assets/home.jpg);
@@ -13,18 +14,18 @@ header{
 }
 
 h1{
-        text-align: left;
-        width: 263px;
-        font-weight: 500;
-         margin: 178px 0 0 329px;
-        font-family: 'Josefin Sans', sans-serif;
-           font-family: 'Poppins', sans-serif;
-}   
+            text-align: left;
+            width: 263px;
+            font-weight: 500;
+            margin: 178px 0 0 100px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Poppins', sans-serif;
+    }   
  header p{
-    margin: 35px 180px 0 329px;
-    font-family: 'Josefin Sans', sans-serif;
-      font-family: 'Poppins', sans-serif;
-      line-height :1.5em;
+        margin: 35px 180px 0 90px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        line-height :1.5em;
  }
 
 //  First Image Section
@@ -120,6 +121,15 @@ h2{
     font-family: "Poppins", sans-serif;
 }
 
+.selling{
+    display: inline-block;
+    background: #eba6aa;
+}
+.latest{
+    display: inline-block;
+    background: #88cce2 ;
+}
+
 // Couch/sofa Section
 .couch{
     display: flex;
@@ -179,6 +189,7 @@ h2{
 .instagram{
     display: flex;
     padding-bottom: 20px;
+   
 
     .instaGallery{
         width: 25%;
@@ -204,7 +215,8 @@ h2{
 
 .footerImage{
     width: 6%; 
-    height: 37px;   
+    height: 37px;
+    margin-right: 3px;   
 }
 
 .footerImg{
