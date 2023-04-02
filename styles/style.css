@@ -260,14 +260,13 @@ nav a:hover, nav a:focus {
 
 .cartIcon {
   margin: 20px 35px 0 0;
+  position: relative;
 }
 
-.hamMenu {
-  display: none;
-}
-
-#menu-toggle {
-  display: none;
+.cartIconSup {
+  position: absolute;
+  top: 5px;
+  vertical-align: top;
 }
 
 @media (max-width: 700px) {
@@ -331,6 +330,12 @@ nav a:hover, nav a:focus {
     position: relative;
     bottom: 200px;
   }
+  .contactHeader {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-position-x: 50%;
+  }
 }
 @media (min-width: 701px) {
   .secondCouch {
@@ -367,7 +372,7 @@ nav a:hover, nav a:focus {
         flex-wrap: wrap;
   }
   .seeAll {
-    width: 18%;
+    width: 19%;
   }
   .instagram {
     -ms-flex-wrap: wrap;
@@ -396,22 +401,23 @@ nav a:hover, nav a:focus {
     width: 100%;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 435px) {
   .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .wrapperOne {
+    height: 80px;
+  }
   .imageSection ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .seeAll {
-    width: 15%;
+    width: 33%;
   }
-}
-@media (max-width: 435px) {
   .sale {
     position: absolute;
     left: 5%;
