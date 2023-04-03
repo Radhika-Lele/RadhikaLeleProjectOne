@@ -130,6 +130,9 @@
                 }   
 
                 @media(max-width :435px){
+                   body{
+                    overflow-x: hidden;
+                   }
                     .menu{
                         flex-direction: column;
 
