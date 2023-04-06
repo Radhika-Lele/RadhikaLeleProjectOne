@@ -30,14 +30,20 @@
             <div class="logo">
                 <img src="./project-1-store-novas/novas-project/assets/logo-black.png" alt="novas logo">
             </div>
-            <!-- <input id="menuButton" type="checkbox"/>
-            <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./project-1-store-novas/novas-project/assets/icons/hamburger.png" alt="Navigation Menu"></label> -->
+            <!--input id="menuButton" type="checkbox"/>
+            <label class="buttonContainer" for="menuButton"><img class="hamMenu" src="./project-1-store-novas/novas-project/assets/icons/hamburger.png" alt="Navigation Menu"></label-->
             <nav>
                 <ul class="menu">
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>      
+                    <li><a href="./contact.html">Contact Us</a></li>    
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
             </nav>
             <div class="cartIcon">
                 <img src="./project-1-store-novas/novas-project/assets/icons/shopping-cart-black-icon.png"
@@ -138,6 +144,10 @@
                     </div>
 
                 </div>
+                <!-- <div class="direction">
+                    <button id="prev"><</button>
+                    <button id="next">></button>
+                </div> -->
             </div>
 
             <div class="secondSection">
@@ -211,13 +221,16 @@
             <h2>Follow Instagram</h2>
             <div class="instagramShop">@Novas_shop</div>
             <div class="instagram">
-                <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig4.jpg" alt="closet">
-                </div>
-                <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig1.jpg"
-                        alt="round mirror"></div>
+                <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig4.jpg" alt="closet"></div>
+                <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig1.jpg"alt="round mirror"></div>
                 <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig2.jpg" alt="bench"></div>
                 <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig3.jpg" alt="plant"></div>
                 <div class="instaGallery"><img src="./project-1-store-novas/novas-project/assets/ig5.jpg" alt="chair"></div>
+
+                <div class="popupImage">
+                    <span>&times;</span>
+                    <img src="./project-1-store-novas/novas-project/assets/ig4.jpg" alt="">
+                </div>
             </div>
         </section>
 
@@ -308,8 +321,53 @@
             </section>
         </footer>
 
+     <script>
+        //Hamburger Menu 
+        const navSlide = () =>{
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.menu');
+            const navLinks = document.querySelectorAll('.menu li');
+            //toggle Nav
+            burger.addEventListener('click', ()=>{
+             nav.classList.toggle('nav-active');
+   
+            //Animate links
+            navLinks.forEach((link,index)=>{
+             if(link.style.animation){
+                link.style.animation = '';
+             } else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+             }   
+            });
 
+            //Burger Animation
+            burger.classList.toggle('toggle');
+        }); 
+    }
+        navSlide();
 
+    //Instagram section popup modal
+        document.querySelectorAll('.instaGallery img').forEach(image => {
+            image.onclick = () =>{
+                document.querySelector('.popupImage').style.display = 'block';
+                document.querySelector('.popupImage img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popupImage span').onclick = () =>{
+            document.querySelector('.popupImage').style.display = 'none';
+        }
+
+    //featured Sale section Image slider
+    // document.getElementById('next').onclick = function(){
+    //     const widthItem = document.querySelector('.product').offsetWidth;
+    //     document.querySelector('.shoppingGalleryOne').scrollLeft += widthItem;
+    // }   
+    // document.getElementById('prev').onclick = function(){
+    //     const widthItemOne = document.querySelector('.product').offsetWidth;
+    //     document.querySelector('.shoppingGalleryOne').scrollLeft -= widthItemOne;
+    // }     
+           
+     </script>
     </body>
 
     </html>

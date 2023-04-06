@@ -146,6 +146,22 @@
             display: inline-block;
             background: #88cce2 ;
         }
+        // .direction{
+        //     text-align: center;
+        // }
+        // .direction button{
+        //     font-family: cursive;
+        //     font-weight: bold;
+        //     border:none;
+        //     width:50px;
+        //     height: 50px;
+        //     border-radius: 50%;
+        //     transition: 0.5s;
+        //     margin: 0 10px;
+        // }
+        // .direction button:hover{
+        //     background-color: #ffffff;
+        // }
 
         // Couch/sofa Section
         .couch{
@@ -207,7 +223,6 @@
             display: flex;
             padding-bottom: 20px;
         
-
             .instaGallery{
                 width: 25%;
             }
@@ -218,6 +233,41 @@
                 padding: 10px;
             }
         }
+        .instagram .instaGallery:hover img{
+              transform : scale(1.1);
+        }
+        .popupImage{
+            position: fixed;
+            top: 0;
+            left :0;
+            background: grey;
+            height :100%;
+            width:100%;
+            z-index: 100;
+            display: none;
+        }
+        .popupImage span{
+            position: absolute;
+            top : 0;
+            right : 10px;
+            font-size: 40px;
+            font-weight: bolder;
+            color:#fff;
+            cursor: pointer;
+            z-index: 100;
+        }
+        .popupImage img{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            border:5px solid #fff;
+            border-radius: 5px;
+            width: 750px;
+            object-fit: cover;
+        }
+
+
         //  Footer section
 
         .footerTop{

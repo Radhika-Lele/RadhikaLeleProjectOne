@@ -6,7 +6,7 @@
         ul{
             display:flex;  
             list-style-type:none;  
-            text-align: center;      
+            text-align: center; 
         }  
     }
     a{
@@ -36,9 +36,24 @@
         top: 5px;
         vertical-align: top;
     }
-    //  .hamMenu, #menuButton{
-    //      display: none; 
-    //     }
+    
+     .burger {
+         display: none;
+        position: absolute;
+        top: 15px;
+        cursor: pointer;
+  }
+ 
+
+    .burger div{
+            width: 25px;
+            height: 2px;
+            background-color : rgb(100, 100, 100);
+            margin: 5px;
+        }
+        
+
+
 
 
 

@@ -269,6 +269,20 @@ nav a:hover, nav a:focus {
   vertical-align: top;
 }
 
+.burger {
+  display: none;
+  position: absolute;
+  top: 15px;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(100, 100, 100);
+  margin: 5px;
+}
+
 @media (max-width: 700px) {
   .menu {
     position: absolute;
@@ -350,6 +364,9 @@ nav a:hover, nav a:focus {
   }
 }
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   h1 {
     font-size: 1.6em;
   }
@@ -387,6 +404,9 @@ nav a:hover, nav a:focus {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .popupImage img {
+    max-width: 95%;
+  }
   .aboutCompany {
     -webkit-transform: none;
             transform: none;
@@ -400,16 +420,82 @@ nav a:hover, nav a:focus {
   .container {
     width: 100%;
   }
-}
-@media (max-width: 435px) {
-  body {
-    overflow-x: hidden;
+  .wrapperOne {
+    height: 10vh;
+  }
+  .burger {
+    display: block;
   }
   .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 2vh;
+    width: 130%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .menu li {
+    opacity: 0;
+  }
+}
+.nav-active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 435px) {
+  body {
+    overflow-x: hidden;
   }
   .wrapperOne {
     height: 80px;
@@ -639,6 +725,46 @@ h2 {
   width: 100%;
   height: auto;
   padding: 10px;
+}
+
+.instagram .instaGallery:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.popupImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: grey;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.popupImage span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popupImage img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footerTop {
