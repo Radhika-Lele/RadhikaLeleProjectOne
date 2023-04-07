@@ -339,8 +339,14 @@
             margin-bottom: 16px;
             resize: vertical;
         }
-
-        input[type=submit] {
+        .error-hint{
+                color:red;
+               
+        }
+        .hidden{
+        display: none;
+        }
+        button[type=submit] {
             background-color: #04AA6D;
             color: $color-primary;
             padding: 12px 20px;
